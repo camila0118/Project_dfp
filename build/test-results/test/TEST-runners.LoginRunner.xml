@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.LoginRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-Q5H3KMR" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+1 Scenarios (?[32m1 passed?[0m)
+3 Steps (?[32m3 passed?[0m)
+0m35,639s
+
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Admin/Documents/automatizacion%20kmila/casodepruebaDFP/src/test/resources/features/login.feature
+[Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO  - Test Suite Started: Login
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@49fe0bcd: Generating report for test outcome: login:loguearme
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@410f53b2: Generating report for test outcome: login:loguearme
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/Admin/Documents/automatizacion%20kmila/casodepruebaDFP/src/test/resources/features/login.feature
+]]></system-err>
+</testsuite>

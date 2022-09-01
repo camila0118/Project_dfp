@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">Login</a></span>
+                > <span class="truncate-60"><a
+                    href="3c8b6795e286da947be23bd337e4a56c2ff0b60bc7f9c918cf9afc456d2adb6a.html">Loguearme </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-08-2022 15:05</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                i as service
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Loguearme
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b0c0920d220f8466a11e2b811acf8748298bd73abf54bc7bf222e8325261ccec.png" title=" Given El usuario esta en la pagina" width="1920"/>
+                <img src="b0c0920d220f8466a11e2b811acf8748298bd73abf54bc7bf222e8325261ccec.png" title=" User opens the https://develdfp.cloudsenactpi.net/#/home" width="1920"/>
+                <img src="b0c0920d220f8466a11e2b811acf8748298bd73abf54bc7bf222e8325261ccec.png" title=" Given El usuario esta en la pagina (completed)" width="1920"/>
+                <img src="2361272229e7b87a54b5543445012e430f75c008c6b806bd99dcfbcb4fa1b74e.png" title=" When El usuario ingresa las credenciales" width="1920"/>
+                <img src="2361272229e7b87a54b5543445012e430f75c008c6b806bd99dcfbcb4fa1b74e.png" title=" User login" width="1920"/>
+                <img src="2361272229e7b87a54b5543445012e430f75c008c6b806bd99dcfbcb4fa1b74e.png" title=" User clicks on Inicio sesion" width="1920"/>
+                <img src="2361272229e7b87a54b5543445012e430f75c008c6b806bd99dcfbcb4fa1b74e.png" title=" User enters '1061694589' into Usuario*" width="1920"/>
+                <img src="e4dbaef616c129e75c46a193bf7c5ca4f15a357c7c5e92ee1050028cb5f76ead.png" title=" User enters '1061694589' into Usuario* (completed)" width="1920"/>
+                <img src="e4dbaef616c129e75c46a193bf7c5ca4f15a357c7c5e92ee1050028cb5f76ead.png" title=" User enters 'camidorado0118' into Contrase&Atilde;&plusmn;a*" width="1920"/>
+                <img src="c58617d991dc327baaf26cc1f1e69452e64cc44c177569cd45bbaf02b80ad819.png" title=" User enters 'camidorado0118' into Contrase&Atilde;&plusmn;a* (completed)" width="1920"/>
+                <img src="c58617d991dc327baaf26cc1f1e69452e64cc44c177569cd45bbaf02b80ad819.png" title=" User clicks on Click on the button 'Iniciar sesion'" width="1920"/>
+                <img src="804c83a336b78622d5b789e60c1b2ba98769394c8076c1515c12c3b28d37e6c3.png" title=" User clicks on Click on the button 'Iniciar sesion' (completed)" width="1920"/>
+                <img src="cccc6ed3b4ddcf661436690675c5b182ab0698c45322a58d9903fa5742b1a7c1.png" title=" User clicks on Cerar Sesion" width="1920"/>
+                <img src="b0c0920d220f8466a11e2b811acf8748298bd73abf54bc7bf222e8325261ccec.png" title=" User clicks on Cerar Sesion (completed)" width="1920"/>
+                <img src="2361272229e7b87a54b5543445012e430f75c008c6b806bd99dcfbcb4fa1b74e.png" title=" User clicks on Inicio sesion" width="1920"/>
+                <img src="2361272229e7b87a54b5543445012e430f75c008c6b806bd99dcfbcb4fa1b74e.png" title=" User enters 'camila123' into Usuario*" width="1920"/>
+                <img src="50a32c9dba17f8685ed9f900fc9ba5de5afbce6de1dedb3e8eae780c674a4eea.png" title=" User enters 'camila123' into Usuario* (completed)" width="1920"/>
+                <img src="50a32c9dba17f8685ed9f900fc9ba5de5afbce6de1dedb3e8eae780c674a4eea.png" title=" User enters 'ckjnc' into Contrase&Atilde;&plusmn;a*" width="1920"/>
+                <img src="61cf8278b32fa9247bf83ad434dcd17a221df11ebe8bc86c3a25ac45e385c1f4.png" title=" User enters 'ckjnc' into Contrase&Atilde;&plusmn;a* (completed)" width="1920"/>
+                <img src="61cf8278b32fa9247bf83ad434dcd17a221df11ebe8bc86c3a25ac45e385c1f4.png" title=" User clicks on Click on the button 'Iniciar sesion'" width="1920"/>
+                <img src="84d270a29910acfb646295a382dd24037e85091241ca4dc2b40f9d1b277bf5dc.png" title=" User clicks on Click on the button 'Iniciar sesion' (completed)" width="1920"/>
+                <img src="ba99960c94c01c94427dc73daf55d9b9975925b4a43bc9cc70baa7220e06e9f6.png" title=" User login (completed)" width="1920"/>
+                <img src="ba99960c94c01c94427dc73daf55d9b9975925b4a43bc9cc70baa7220e06e9f6.png" title=" When El usuario ingresa las credenciales (completed)" width="1920"/>
+                <img src="ba99960c94c01c94427dc73daf55d9b9975925b4a43bc9cc70baa7220e06e9f6.png" title=" Then puede ver los datos: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.4.34</span>
+</div>
+</body>
+</html>
